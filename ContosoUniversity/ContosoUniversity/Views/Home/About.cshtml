@@ -1,0 +1,58 @@
+﻿@model IEnumerable<ContosoUniversity.Models.SchoolViewModels.EnrollmentDateGroup>
+
+@{
+    ViewData["Title"] = "Student Body Statistics";
+}
+
+<h2>Student Body Statistics</h2>
+
+<table>
+    <tr>
+        <th>
+            Enrollment Date
+        </th>
+        <th>
+            Students
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnrollmentDate)
+            </td>
+            <td>
+                @item.StudentCount
+            </td>
+        </tr>
+    }
+</table>
+
+<div>
+    <h2>Developer Contact Information</h2>
+    <table>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Number
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Getzels Nicolas De Los Santos
+            </td>
+            <td>
+                gdelossantos@byui.edu
+            </td>
+            <td>
+                1809-845-1255
+            </td>
+        </tr>
+    </table>
+</div>

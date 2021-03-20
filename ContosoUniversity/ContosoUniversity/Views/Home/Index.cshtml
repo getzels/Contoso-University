@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Getzels University</h1>
+    <img id="homeimge" class="homeimge" src="~/img/homeimg.jpg"  alt="Getzels Website home image"/>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Welcome to Getzels University</h2>
+        <p>
+            Getzels University web site here you can have 
+            information about the university and do the enrollment process such as 
+            take course and know the instructors for each course. 
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>See all our courses</h2>
+        <p>Getzels University has a group of course that will help you to improve your skill</p>
+        <p><a class="nav-link text-dark" asp-area="" asp-controller="Courses" asp-action="Index">See the courses &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Our instructors</h2>
+        <p>Getzels University as a large group of high quality instructors, that will help you through your course</p>
+        <p><a class="nav-link text-dark" asp-area="" asp-controller="Instructors" asp-action="Index">See all our Instructors &raquo;</a></p>
+    </div>
+</div>
